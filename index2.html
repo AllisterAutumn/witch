@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="moonphase.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.1/csshake-little.css">
+    <title></title>
+</head>
+
+<body class="shake-little shake-constant">
+    <header>
+    </header>
+    <section id="main">
+        <h1>witch cave</h1>
+        <nav>
+            <ul id="nav">
+                <li class="links">spells</li>
+                <li class="links">fortunes</li>
+                <li class="links">about</li>
+                <li class="links">visit us</li>
+                <li><a href>the witch</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="articles">
+        <article class="article">
+            <h2>Spell of the day</h2>
+            <h3>As long as I live</h3>
+            <p>
+                This is a strong curse to be used on someone who has caused any kind of pain to you more than once and has rightfully earned your loathing. It makes them fear you for as long as you live, a fear so strong it can cause very extreme nightmares.</p>
+            <a href="http://www.spellsofmagic.com/spells/health_spells/hurt_spells/13859/page.html">read more</a>
+        </article>
+        <article class="article">
+            <h2>
+    Three Kings Ritual
+  </h2>
+            <p>The Three Kings ritual could very well be dangerous, so you are advised not to attempt it. It is said that by performing the ritual, you can access a place they call “The Shadowside”. Its effectiveness depends on how closely you follow the instructions.</p>
+            <p>To play The Three Kings game, you need a quiet and empty room, preferably without windows. If necessary, you can cover the windows, making sure that the room is in total darkness. This is called the Dark Room.</p>
+            <a href="http://www.scaryforkids.com/three-kings/">read more</a>
+        </article>
+        <article class="article">
+            <h2>History of curses</h2>
+            <p>The use of curse has been practiced by many cultures. The most universal method of laying on a curse is by effigy, which is an image or representation of the victim, or the person who is wished to be harmed. Waxed effigies were common in ancient India, Persia, Egypt, Africa and Europe, and currently are still used.</p>
+            <a href="https://www.themystica.com/mystica/articles/c/curses.html">read more</a>
+        </article>
+        <article class="article">
+            <h2>Witch craft magazine</h2>
+            <p>Founded in 2015, Witch Craft is a print magazine and micropress with the goal of publishing work that moves us to believe in magic again.
+            </p>
+            <a href="http://www.witchcraftmag.com">learn more</a>
+        </article>
+    </section>
+    <section id="moonaside">
+        <h1>moonphases</h1>
+        <input id="date" type="text" name="date" placeholder="mm/dd/yyyy">
+        <button onclick="getMoonPhase()">submit</button>
+        <br>
+        <h4 id="phase">today's moon is</h4>
+        <img id="moon" src="http://api.usno.navy.mil/imagery/moon.png?date=2/28/2017">
+    </section>
+    <section id="horoscope">
+        <table>
+            <tr>
+                <td id="aquarius"> <img src="horoscope/aquarius.png">
+                    <h3>aquarius</h3>
+                    <p id="paquarius"></p>
+                </td>
+                <td id="aries"> <img src="horoscope/aries.png">
+                    <h3>aries</h3>
+                    <p id="paries"></p>
+                </td>
+                <td id="cancer"> <img src="horoscope/cancer.png">
+                    <h3>cancer</h3>
+                    <p id="pcancer"></p>
+                </td>
+                <td id="capricorn"> <img src="horoscope/capricorn.png">
+                    <h3>capricorn</h3>
+                    <p id="pcapricorn"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="gemini"> <img src="horoscope/gemini.png">
+                    <h3>gemini</h3>
+                    <p id="pgemini"></p>
+                </td>
+                <td id="leo"> <img src="horoscope/leo.png">
+                    <h3>leo</h3>
+                    <p id="pleo"></p>
+                </td>
+                <td id="libra"> <img src="horoscope/libra.png">
+                    <h3>libra</h3>
+                    <p id="plibra"></p>
+                </td>
+                <td id="pisces"> <img src="horoscope/pisces.png">
+                    <h3>pisces</h3>
+                    <p id="ppisces"></p>
+                </td>
+            </tr>
+            <tr>
+                <td id="sagittarius"> <img src="horoscope/sagittarius.png">
+                    <h3>sagittarius</h3>
+                    <p id="psagittarius"></p>
+                </td>
+                <td id="scorpio"> <img src="horoscope/scorpio.png">
+                    <h3>scorpio</h3>
+                    <p id="pscorpio">
+                        </> </td>
+                <td id="taurus"> <img src="horoscope/taurus.png">
+                    <h3>taurus</h3>
+                    <p id="ptaurus"></p>
+                </td>
+                <td id="virgo"> <img src="horoscope/virgo.png">
+                    <h3>virgo</h3>
+                    <p id="pvirgo">
+                        </p> </td>
+            </tr>
+        </table>
+    </section>
+</body>
+<style type="text/css">
+body {
+    animation: blurIt 10s linear infinite alternate;
+}
+
+@keyframes blurIt {
+    0% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(2px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+</style>
+
+</html>

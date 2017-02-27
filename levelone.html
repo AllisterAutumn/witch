@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title></title>
+</head>
+<body>
+<div id="opening">
+<span id="holder"></span>
+</div>
+<img id="fire" src="fire.gif">
+<img id="rain" src="window.gif">
+</body>
+<script>
+(function($) {
+    $.fn.writeText = function(content) {
+        var contentArray = content.split(""),
+            current = 0,
+            elem = this;
+        setInterval(function() {
+            if(current < contentArray.length) {
+                elem.text(elem.text() + contentArray[current++]);
+            }
+        }, 100);
+    };
+
+})(jQuery);
+$("#holder").writeText("Once upon a midnight dreary, while I pondered, weak and wnd curious volume of forgotten lore— While I nodded, nearly napping, suddenly there came a tapping, ");
+$("#opening").delay(500).fadeOut('fast');
+</script>
+</html>
+

@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  padding:0;
+  background: url(black.png) no-repeat fixed center; ;
+  background-size: contain;
+}
+#opening {
+  background-color: black;
+  color: white;
+  height: 100vh;
+  z-index: 5;
+}
+
+#fire{
+  position: absolute;
+  left: 700px;
+  top: 450px;
+  height: 100px;
+  z-index: -1
+}
+
+#rain{
+  position: absolute;
+  right: 0;
+  top:80px;
+  width: 500px;
+}
