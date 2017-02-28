@@ -7,12 +7,18 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <link rel="stylesheet" type="text/css" href="gamestyle.css">
-    <title></title>
+    <title>the witch</title>
 </head>
 
 <body>
 
-    <div><li><a id="witch">the witch</a></li></div>
+ <div id="cover"><li><a id="witch">the witch</a></li></div>
+    <article>
+      <p>Once upon a time there was a girl who lived all by herself in an empty tin cottage in the <span>woods.</span> In the bare morning, as the sun whispered up from beneath the horizon she would walk to the very edge of town. She’d watch the stores being opened, and booths being set up. <br>She’d sigh as people talked and argued and moved among each other. At around noon, she’d be on the alert for a boy to come loping towards her, carefree and smiling, with a tin pail on his arm.
+They’d talk for a few minutes as she emptied the bucket’s contents on the ground, and then he’d leave.
+</p>
+<a href="file:///Users/student_29/generalassembly/pointnclick/story/chapter2.html"><div class="click" id="click1"></div></a>
+    </article>
 </body>
 <style type="text/css">
   body{
@@ -27,18 +33,28 @@
 #witch:hover{
 
     font-size: 12pt;
+    cursor: pointer;
 }
-div{padding-top: 15em;
+#cover{padding-top: 15em;
   background-color: black;
   width: 200vh;
-  height: 200vh;
+  height: 100vh;
   position: relative;
 }
+
+#click1{
+  width: 100px;
+  position: absolute;
+  height: 300px;
+  left: 550px;
+
+}
+
 </style>
 
 <script type="text/javascript">
-   $("div").click(function(){
-               $("div").toggle( "explode", {pieces: 16}, 2000 );
+   $("#cover").click(function(){
+               $("#cover").toggle( "explode", {pieces: 20}, 2000 );
             });
 </script>
 

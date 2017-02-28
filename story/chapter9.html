@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3</title>
+</head>
+<!-- this is a script sourced from http://www.mantlelabs.com/flashlight/ that creates a flash light effect. I am using the jquery and css from that site for the effect -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("body").mousemove(function(e) {
+        $("body").css('background-position', (e.pageX - 250) + 'px ' + (e.pageY - 250) + 'px');
+    });
+});
+</script>
+
+<body>
+    <article>
+        <p>At this the woman whipped around with a wild laugh. “Love? Didn’t I tell you to go? Get out of here! Before you kill him too! Go!” “Yeah! Go!” A man had walked out of the building watching the scene. A crowd was gathering. “Get out!” “Go!” “You’ve come to finish the job!” “Leave!” “Go away!” “Get out!”
+        </p>
+        <a href="file:///Users/student_29/generalassembly/pointnclick/story/chapter10.html"><div class="click" id="click9"></div></a>
+    </article>
+    <span  id="one">“Witch!”</span>
+    <span id="two">“Witch!”</span>
+    <br><span id="three">“Witch!”</span>
+</body>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Amiko|Lora');
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+    background-image: url(../images/flashlight.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: crosshair;
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: 15pt;
+}
+
+
+#one {
+    margin-left: 90px;
+    color: black;
+    font-size: 55pt;
+
+}
+
+#two{
+    margin-left: 120px;
+    color: black;
+}
+
+#three {
+    margin-left: 500px;
+    color: black;
+    font-size: 100pt;
+}
+#three:hover{
+  color: red
+}
+p {
+    color: black word-spacing: 10pt
+}
+
+article {
+    color: white;
+    width: 400px;
+    margin-left: 3em
+}
+
+
+</style>
+
+</html>
