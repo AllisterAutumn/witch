@@ -23,7 +23,18 @@ $('#radiono').click(function(){ window.close()})
                $(".links").effect( "shake", {times:3}, 100 );
             });
 
-
+$("#spells").hover(function(){
+               $("#spells").hide( "drop", {direction: "down"}, 300 );
+            });
+$("#visit").hover(function(){
+               $("#visit").hide( "drop", {direction: "down"}, 300 );
+            });
+$("#about").hover(function(){
+               $("#about").hide( "drop", {direction: "down"}, 300 );
+            });
+$("#fortunes").hover(function(){
+               $("#fortunes").hide( "drop", {direction: "down"}, 300 );
+            });
 
 
 //this is an array of horoscopes
